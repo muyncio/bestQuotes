@@ -9,6 +9,8 @@ import {QUOTES} from "./models/database";
 })
 export class AppComponent {
   title = 'bestQuotes';
+  bestQuotesTitle: string = 'Najlepsze cytaty';
+  worstQuotesTitle: string = 'Najgorsze cytaty';
   showForm = false;
   quotes: Quotation[] = QUOTES;
   quotation: Quotation = {author: '', sentence: '', votes: 0};

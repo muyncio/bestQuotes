@@ -1,4 +1,4 @@
-<app-navbar></app-navbar>
+<app-navbar [title]="bestQuotesTitle"></app-navbar>
 <div class="container q-container">
   <button class="btn-floating teal add-button" (click)="onSwitchForm()">
     <i class="material-icons">add</i>
@@ -41,8 +41,8 @@
       </div>
     </div>
     <div class="col s4">
-<app-ranking [quotes]="bestQuotes()"></app-ranking>
-<app-ranking [quotes]="worstQuotes()"></app-ranking>
+<app-ranking [quotes]="bestQuotes()" [title]='bestQuotesTitle'></app-ranking>
+<app-ranking [quotes]="worstQuotes()" [title]="worstQuotesTitle"></app-ranking>
     </div>
   </div>
 </div>

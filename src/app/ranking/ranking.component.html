@@ -1,0 +1,12 @@
+<div class="col s12">
+  <h5>{{title}}</h5>
+  <div class="collection">
+    <ng-container >
+      <p class="collection-item" *ngFor="let quotation of quotes">
+        <span class="blue lighten-4 badge">{{quotation.votes}}</span>
+        {{quotation.sentence}}.<br>
+        <span class="blue-text">{{quotation.author}}</span>
+      </p>
+    </ng-container>
+  </div>
+</div>
